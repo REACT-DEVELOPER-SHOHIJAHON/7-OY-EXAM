@@ -16,10 +16,10 @@ const Users = () => {
     }
 
     return (
-        <div className="container max-w-[1440px] mx-auto w-full flex items-center justify-center py-10">
-            <div className="grid grid-cols-3 max-w-[980px] gap-6 w-full px-4">
+        <div className="container max-w-[1600px] mx-auto w-full flex items-center justify-center py-10">
+            <div className="grid grid-cols-3 max-w-[1200px] gap-6 w-full px-4">
                 {usersIsLoading ? (
-                    <p className="flex items-center justify-center h-screen text-gray-500">Loading...</p>
+                    <p className="flex items-center justify-center h-screen text-gray-500"></p>
                 ) : users && users.length > 0 ? (
                     users.map((user) => (
                         <div 
@@ -33,13 +33,13 @@ const Users = () => {
                                     alt={`${user.first_name} ${user.last_name}`} 
                                     className="w-48 h-48 mb-4 object-cover border-4" 
                                 />
-                                <h2 className="text-2xl font-semibold text-gray-900">
+                                <h2 className="text-2xl font-semibold text-green-900">
                                     {user.first_name} {user.last_name}
                                 </h2>
-                                <p className="text-gray-700 text-lg">{user.email}</p>
+                                <p className="text-yellow-700 text-lg">{user.email}</p>
                             </Link>
                             <Button 
-                                className='w-[100px] bg-red-500 text-white hover:bg-red-600 transition duration-200' 
+                                className='w-[200px] h-[45px] bg-green-500' 
                                 onClick={() => handleDelete({ id: user.id })} 
                                 type="primary" 
                                 danger
