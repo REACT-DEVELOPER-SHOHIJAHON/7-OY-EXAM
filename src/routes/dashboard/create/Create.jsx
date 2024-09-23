@@ -26,7 +26,7 @@ const Create = () => {
   return (
     <div className="flex w-full items-center justify-center min-h-screen bg-gradient-to-r from-pink-400 to-purple-500">
   <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm">
-    <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">Create User</h2>
+    <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">Create a new user</h2>
     <input 
       required 
       value={name} 
@@ -47,7 +47,7 @@ const Create = () => {
       type="submit" 
       className="w-full py-3 bg-purple-600 text-white font-semibold rounded-md hover:bg-purple-700 transition-colors" 
     >
-      Create
+      Create User
     </button>
   </form>
 </div>
