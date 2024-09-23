@@ -25,26 +25,21 @@ const Sidebar = () => {
       to="/" 
       className={({ isActive }) => `px-6 py-3 rounded ${isActive ? 'bg-blue-600' : 'hover:bg-blue-500'}`} 
     >
-      Home
+      HOME
     </NavLink>
     <NavLink 
       to="/dashboard/profile" 
       className={({ isActive }) => `px-6 py-3 rounded ${isActive ? 'bg-blue-600' : 'hover:bg-blue-500'}`} 
     >
-      Profile
+      PROFILE
     </NavLink>
     <NavLink 
       to="/dashboard/create" 
       className={({ isActive }) => `px-6 py-3 rounded ${isActive ? 'bg-blue-600' : 'hover:bg-blue-500'}`} 
     >
-      Create
+      CREATE
     </NavLink>
-    <NavLink 
-      to="/e" 
-      className={({ isActive }) => `px-6 py-3 rounded ${isActive ? 'bg-blue-600' : 'hover:bg-blue-500'}`} 
-    >
-      Notfound
-    </NavLink>
+    
     <div className="absolute bottom-10 w-[224px]">
       <Modal />
     </div>
@@ -55,3 +50,4 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
